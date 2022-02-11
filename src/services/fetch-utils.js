@@ -21,3 +21,29 @@ export async function logout() {
 
     return window.location.href = '../';
 }
+
+export async function getBirds() {
+    const response = await client 
+        .from('birds')
+        .select();
+
+    return checkError(response);
+}
+
+export async function getBird(id) {
+    const response = await client
+        .from('birds')
+        .select()
+        .match({ id })
+        .single();
+
+    return checkError(response);
+}
+
+export async function createBird(bird) {
+    const response = await client
+        .from('birds')
+        .insert([bird]);
+
+    return checkError(response);
+}
