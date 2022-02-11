@@ -34,8 +34,8 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <h2>hello</h2>
-        <header>
+        <header className='nav'>
+          <h2>bird life list</h2>
           {
             user && 
             <div>
@@ -44,7 +44,7 @@ function App() {
                 to='/birds'>Birds List</NavLink>
               <NavLink
                 activeClassName='active-class'
-                to='/create'>Create Bird</NavLink>
+                to='/create'>Add Bird</NavLink>
               <button onClick={() => handleLogout()}>Logout</button>
             </div>
           }

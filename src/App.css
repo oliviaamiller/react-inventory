@@ -1,5 +1,16 @@
 .App {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
+.App h2{
+  font-family: 'Suez One', serif;
+  text-transform: capitalize;
+  letter-spacing: .3rem;
+  font-size: 3rem;
+}
 
+.nav {
+  position: fixed;
+  text-align: center;
+}
