@@ -32,6 +32,10 @@ export default function DetailPage() {
       <p>notes: {bird.notes}</p>
       <button onClick={handleDelete}>delete bird</button>
       <button onClick={() => history.push(`/birds/${bird.id}/update`)} >update bird</button>
+
+      <footer>
+        <img src={'./images/owls.png'} />
+      </footer>
       
     </div>
   );

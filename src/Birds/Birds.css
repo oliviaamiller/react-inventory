@@ -8,4 +8,22 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    margin-top: 4rem;
 }
+
+.bird-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+  }
+  
+  footer img {
+    width: 30rem;
+  }

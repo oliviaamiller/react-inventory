@@ -85,9 +85,6 @@ function App() {
             <Route exact path='/birds/:id/update' component={UpdateBird} />
           </Switch>
         </section>
-        <footer>
-          <img src={'./images/bird-man.png'} />
-        </footer>
       </div>
     </Router>
   );

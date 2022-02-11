@@ -51,3 +51,12 @@ a:visited {
 .active-class {
   background-color: pink;
 }
+
+footer {
+  position: fixed;
+  bottom: 0;
+}
+
+footer img {
+  width: 30rem;
+}
