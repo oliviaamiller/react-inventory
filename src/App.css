@@ -8,9 +8,46 @@
   text-transform: capitalize;
   letter-spacing: .3rem;
   font-size: 3rem;
+  color: rgb(255, 225, 0);
 }
 
 .nav {
   position: fixed;
+  margin-left: 4rem;
   text-align: center;
+}
+
+.nav-links{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-family: 'Source Serif 4', sans-serif;
+}
+
+.nav-links a {
+  margin-bottom: 1rem;
+}
+
+a:link {
+  text-decoration: none;
+  color: rgb(255, 140, 0);
+}
+
+a:visited {
+  text-decoration: none;
+  color: rgb(255, 140, 0);
+}
+
+.App button {
+  cursor: pointer;
+  background-color: white;
+  border: none;
+  font-family: 'Source Serif 4', sans-serif;
+  color: rgb(255, 140, 0);
+  font-size: 1rem;
+
+}
+
+.active-class {
+  background-color: pink;
 }

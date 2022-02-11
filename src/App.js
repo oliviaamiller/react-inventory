@@ -35,10 +35,10 @@ function App() {
     <Router>
       <div className="App">
         <header className='nav'>
-          <h2>bird life list</h2>
+          <h2>bird<br/>life<br/>list</h2>
           {
             user && 
-            <div>
+            <div className='nav-links'>
               <NavLink
                 activeClassName='active-class'
                 to='/birds'>Birds List</NavLink>
@@ -85,6 +85,9 @@ function App() {
             <Route exact path='/birds/:id/update' component={UpdateBird} />
           </Switch>
         </section>
+        <footer>
+          <img src={'./images/bird-man.png'} />
+        </footer>
       </div>
     </Router>
   );

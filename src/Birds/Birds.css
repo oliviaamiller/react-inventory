@@ -1,5 +1,6 @@
 .bird {
     border: red 1px solid;
+    margin: 1rem;
 }
 
 .birds-list {
@@ -7,5 +8,4 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 14rem;
 }
