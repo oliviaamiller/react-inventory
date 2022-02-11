@@ -12,6 +12,7 @@ import AuthPage from './AuthPage';
 import CreateBird from './Birds/CreateBird';
 import BirdDetail from './Birds/BirdDetail';
 import BirdList from './Birds/BirdList';
+import UpdateBird from './Birds/UpdateBird';
 
 function App() {
   const [user, setUser] = useState('');
@@ -81,6 +82,7 @@ function App() {
                   : <Redirect to='/' />
               }
             </Route>
+            <Route exact path='/birds/:id/update' component={UpdateBird} />
           </Switch>
         </section>
       </div>

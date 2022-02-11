@@ -31,6 +31,8 @@ export default function DetailPage() {
       <p>location: {bird.location}</p>
       <p>notes: {bird.notes}</p>
       <button onClick={handleDelete}>delete bird</button>
+      <button onClick={() => history.push(`/birds/${bird.id}/update`)} >update bird</button>
+      
     </div>
   );
 }
