@@ -34,7 +34,7 @@ export default function DetailPage() {
       <button onClick={() => history.push(`/birds/${bird.id}/update`)} >update bird</button>
 
       <footer>
-        <img src={'./images/owls.png'} />
+        <img src={'../images/owls.png'} />
       </footer>
       
     </div>

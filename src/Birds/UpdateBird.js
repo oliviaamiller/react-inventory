@@ -60,6 +60,11 @@ export default function UpdateBird() {
         <button>Update Bird</button>
       </form>
 
+      <footer>
+        <img src={'./images/feeding.png'} />
+      </footer>
+      
+
     </div>
   );
 }
