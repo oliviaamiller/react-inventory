@@ -56,3 +56,12 @@ export async function deleteBird(id) {
 
   return checkError(response);
 }
+
+export async function updateBird(id, updatedBird) {
+  const response = await client
+    .from('birds')
+    .update(updatedBird)
+    .match({ id });
+
+  return checkError(response);
+}

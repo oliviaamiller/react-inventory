@@ -14,7 +14,7 @@ export default function BirdForm({
   setNotes
 }) {
   return (
-    <div className='create-bird'>
+    <div className='bird-form'>
       <form onSubmit={submitBird}>
         <input 
           placeholder='name'
