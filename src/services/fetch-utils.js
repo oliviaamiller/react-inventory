@@ -1,49 +1,49 @@
 import { client, checkError } from './client';
 
 export function getUser() {
-    return client.auth.session();
+  return client.auth.session();
 }
 
 export async function signUp(email, password) {
-    const response = await client.auth.signUp({ email, password });
+  const response = await client.auth.signUp({ email, password });
 
-    return response.user;
+  return response.user;
 }
 
 export async function signIn(email, password) {
-    const response = await client.auth.signIn({ email, password });
+  const response = await client.auth.signIn({ email, password });
 
-    return response.user;
+  return response.user;
 }
 
 export async function logout() {
-    await client.auth.signOut();
+  await client.auth.signOut();
 
-    return window.location.href = '../';
+  return window.location.href = '../';
 }
 
 export async function getBirds() {
-    const response = await client 
-        .from('birds')
-        .select();
+  const response = await client 
+    .from('birds')
+    .select();
 
-    return checkError(response);
+  return checkError(response);
 }
 
 export async function getBird(id) {
-    const response = await client
-        .from('birds')
-        .select()
-        .match({ id })
-        .single();
+  const response = await client
+    .from('birds')
+    .select()
+    .match({ id })
+    .single();
 
-    return checkError(response);
+  return checkError(response);
 }
 
 export async function createBird(bird) {
-    const response = await client
-        .from('birds')
-        .insert([bird]);
+  const response = await client
+    .from('birds')
+    .insert([bird]);
 
-    return checkError(response);
+  return checkError(response);
 }
