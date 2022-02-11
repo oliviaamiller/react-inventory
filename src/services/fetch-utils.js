@@ -47,3 +47,12 @@ export async function createBird(bird) {
 
   return checkError(response);
 }
+
+export async function deleteBird(id) {
+  const response = await client
+    .from('birds')
+    .delete()
+    .match({ id });
+
+  return checkError(response);
+}
