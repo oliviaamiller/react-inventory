@@ -13,7 +13,9 @@ export default function BirdList() {
       setBirds(allBirds);
     }
     fetch();
-  });
+  }, []);
+
+  console.log(birds);
 
   return (
     <div className='birds-list'>
