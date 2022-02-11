@@ -1,7 +1,13 @@
+import './Birds.css';
+import { Link } from 'react-router-dom';
 
-
-export default function Bird() {
+export default function Bird({ bird }) {
   return (
-    <div>Bird</div>
+    <Link to={`/birds/${bird.id}`}>
+      <div className='bird'>
+        <p>{bird.name}</p>
+        <p>{bird.species}</p>
+      </div>
+    </Link>
   );
 }
