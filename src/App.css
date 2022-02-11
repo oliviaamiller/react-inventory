@@ -14,14 +14,15 @@
 .nav {
   position: fixed;
   margin-left: 4rem;
-  text-align: center;
 }
 
 .nav-links{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  font-family: 'Source Serif 4', sans-serif;
+  font-family: 'Suez One', serif;
+  margin-left: .5rem;
+  font-size: 1.2rem;
 }
 
 .nav-links a {
@@ -30,25 +31,25 @@
 
 a:link {
   text-decoration: none;
-  color: rgb(255, 140, 0);
+  color: rgb(255, 169, 64);
 }
 
 a:visited {
   text-decoration: none;
-  color: rgb(255, 140, 0);
+  color: rgb(255, 169, 64);
 }
 
-.App button {
+.logout {
   cursor: pointer;
   background-color: white;
   border: none;
-  font-family: 'Source Serif 4', sans-serif;
-  color: rgb(255, 140, 0);
-  font-size: 1rem;
+  font-family: 'Suez One', serif;
+  color: rgb(255, 169, 64);
+  font-size: 1.2rem;
 
 }
 
 .active-class {
-  background-color: pink;
+  background-color: rgb(255, 227, 232);
 }
 

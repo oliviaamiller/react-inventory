@@ -45,7 +45,7 @@ function App() {
               <NavLink
                 activeClassName='active-class'
                 to='/create'>Add Bird</NavLink>
-              <button onClick={() => handleLogout()}>Logout</button>
+              <button className='logout' onClick={() => handleLogout()}>Logout</button>
             </div>
           }
         </header>

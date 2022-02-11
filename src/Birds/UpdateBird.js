@@ -60,6 +60,10 @@ export default function UpdateBird() {
           onChange={(e) => setFormNotes(e.target.value)}/>
         <button>Update Bird</button>
       </form>
+
+      <footer>
+        <img src={'./images/loony.png'} />
+      </footer>
       
     </div>
   );

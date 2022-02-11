@@ -22,7 +22,16 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 4rem;
+    margin-top: 6rem;
+}
+
+.bird-form input {
+    margin-bottom: .5rem;
+}
+
+.bird-form textarea {
+    height: 8rem;
+    resize: none;
 
 }
 
@@ -30,8 +39,18 @@ footer {
     position: fixed;
     bottom: 0;
     left: 0;
-  }
+}
   
-  footer img {
+footer img {
     width: 30rem;
+}
+
+button {
+    cursor: pointer;
+    background-color: white;
+    border: none;
+    font-family: 'Suez One', serif;
+    color: rgb(255, 169, 64);
+    font-size: 1rem;
+  
   }
