@@ -33,6 +33,7 @@ function App() {
   return (
     <Router>
       <div className="App">
+        <h2>hello</h2>
         <header>
           {
             user && 
@@ -82,8 +83,6 @@ function App() {
             </Route>
           </Switch>
         </section>
-
-        <h2>hello</h2>
       </div>
     </Router>
   );
