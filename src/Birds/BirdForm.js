@@ -38,6 +38,11 @@ export default function BirdForm({
           onChange={(e) => setNotes(e.target.value)}/>
         <button>Add Bird</button>
       </form>
+
+      <footer>
+        <img src={'../images/feeding.png'} />
+      </footer>
+
     </div>
   );
 }

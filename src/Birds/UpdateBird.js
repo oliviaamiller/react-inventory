@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { getBird, updateBird } from '../services/fetch-utils';
 import { useParams, useHistory } from 'react-router-dom';
+import './Birds.css';
 
 export default function UpdateBird() {
   const [formName, setFormName] = useState('');
@@ -59,12 +60,7 @@ export default function UpdateBird() {
           onChange={(e) => setFormNotes(e.target.value)}/>
         <button>Update Bird</button>
       </form>
-
-      <footer>
-        <img src={'./images/feeding.png'} />
-      </footer>
       
-
     </div>
   );
 }
