@@ -6,8 +6,10 @@ export default function Bird({ bird }) {
     <Link to={`/birds/${bird.id}`}>
       <div className='bird'>
         <img src={bird.image}/>
-        <p className='name'>{bird.name}</p>
-        <p className='species'>{bird.species}</p>
+        <div className='card-data'>
+          <p className='name'>{bird.name}</p>
+          <p className='species'>{bird.species}</p>
+        </div>
       </div>
     </Link>
   );

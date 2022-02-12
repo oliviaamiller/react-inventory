@@ -1,10 +1,14 @@
 .bird {
-    border: red 1px solid;
+    border: rgb(255, 169, 64) 1px solid;
     margin: 1rem;
 }
 
 .bird img {
     width: 12rem;
+}
+
+.card-data {
+    padding: 0rem .5rem;
 }
 
 .birds-list {
@@ -67,6 +71,7 @@
     font-family: 'source serif 4', serif;
     font-weight: 300;
     padding: .5rem;
+    margin-bottom: 1rem;
 }
 
 footer {
@@ -90,5 +95,4 @@ button {
     font-family: 'Suez One', serif;
     color: rgb(255, 169, 64);
     font-size: 1rem;
-  
   }

@@ -11,6 +11,21 @@
   color: rgb(255, 225, 0);
 }
 
+.auth form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 6rem;
+}
+
+.auth input {
+  margin-bottom: .5rem;
+  padding: .5rem;
+  font-family: 'source serif 4', serif;
+  font-weight: 300;
+  width: 14rem;
+}
+
 .nav {
   position: fixed;
   margin-left: 4rem;
