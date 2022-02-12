@@ -54,12 +54,19 @@
 
 .bird-form input {
     margin-bottom: .5rem;
+    padding: .5rem;
+    font-family: 'source serif 4', serif;
+    font-weight: 300;
+    width: 14rem;
 }
 
 .bird-form textarea {
-    height: 8rem;
+    height: 10rem;
+    width: 14rem;
     resize: none;
-
+    font-family: 'source serif 4', serif;
+    font-weight: 300;
+    padding: .5rem;
 }
 
 footer {
