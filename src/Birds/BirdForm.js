@@ -11,7 +11,9 @@ export default function BirdForm({
   location,
   setLocation,
   notes, 
-  setNotes
+  setNotes,
+  image,
+  setImage
 }) {
   return (
     <div className='bird-form'>
@@ -32,6 +34,10 @@ export default function BirdForm({
           placeholder='location seen'
           required value={location}
           onChange={(e) => setLocation(e.target.value)}/>
+        <input
+          placeholder='image url'
+          value={image}
+          onChange={(e) => setImage(e.target.value)}/>
         <textarea 
           placeholder='notes'
           required value={notes}

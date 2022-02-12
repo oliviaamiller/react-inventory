@@ -25,6 +25,7 @@ export default function DetailPage() {
 
   return (
     <div className='bird-detail'>
+      <img src={bird.image}/>
       <p>{bird.name}</p>
       <p>{bird.species}</p>
       <p>seen: {bird.date}</p>

@@ -9,6 +9,7 @@ export default function UpdateBird() {
   const [formDate, setFormDate] = useState('');
   const [formLocation, setFormLocation] = useState('');
   const [formNotes, setFormNotes] = useState('');
+  const [formImage, setFormImage] = useState('');
   const history = useHistory();
   const { id } = useParams();
 
@@ -16,6 +17,7 @@ export default function UpdateBird() {
     async function fetch() {
       const bird = await getBird(id);
 
+      setFormImage(bird.image);
       setFormName(bird.name);
       setFormSpecies(bird.species);
       setFormDate(bird.date);
@@ -33,7 +35,8 @@ export default function UpdateBird() {
       species: formSpecies,
       date: formDate,
       location: formLocation,
-      notes: formNotes
+      notes: formNotes,
+      image: formImage
     });
 
     history.push('/birds');
@@ -55,6 +58,9 @@ export default function UpdateBird() {
         <input 
           value={formLocation}
           onChange={(e) => setFormLocation(e.target.value)}/>
+        <input 
+          value={formImage}
+          onChange={(e) => setFormImage(e.target.value)}/>
         <textarea 
           value={formNotes}
           onChange={(e) => setFormNotes(e.target.value)}/>

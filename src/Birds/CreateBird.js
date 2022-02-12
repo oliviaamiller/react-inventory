@@ -11,6 +11,7 @@ export default function CreatePage() {
   const [date, setDate] = useState('');
   const [location, setLocation] = useState('');
   const [notes, setNotes] = useState('');
+  const [image, setImage] = useState('');
   const history = useHistory();
 
   async function handleSubmit(e) {
@@ -21,7 +22,8 @@ export default function CreatePage() {
       species,
       date,
       location,
-      notes
+      notes,
+      image
     });
 
     history.push('./birds');
@@ -40,7 +42,9 @@ export default function CreatePage() {
         location={location}
         setLocation={setLocation}
         notes={notes}
-        setNotes={setNotes} />
+        setNotes={setNotes}
+        image={image}
+        setImage={setImage} />
     </div>
   );
 }
