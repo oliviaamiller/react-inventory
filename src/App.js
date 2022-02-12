@@ -82,7 +82,13 @@ function App() {
                   : <Redirect to='/' />
               }
             </Route>
-            <Route exact path='/birds/:id/update' component={UpdateBird} />
+            <Route exact path='/birds/:id/update'>
+              {
+                user
+                  ? <UpdateBird />
+                  : <Redirect to='/' />
+              }
+            </Route>
           </Switch>
         </section>
       </div>

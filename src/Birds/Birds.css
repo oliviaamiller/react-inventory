@@ -3,6 +3,10 @@
     margin: 1rem;
 }
 
+.bird img {
+    width: 12rem;
+}
+
 .birds-list {
     display: flex;
     flex-direction: row;
@@ -16,6 +20,29 @@
     flex-direction: column;
     align-items: center;
     margin-top: 4rem;
+    font-family: 'source serif 4', serif;
+    font-weight: 300;
+}
+
+.name {
+    font-family: 'source serif 4', serif;
+    font-weight: 400;
+}
+
+.species {
+    font-family: 'source serif 4', serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.bird-detail-img {
+   width: 22rem;
+}
+
+.bird-data {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
 }
 
 .bird-form form {
@@ -42,7 +69,11 @@ footer {
 }
   
 footer img {
-    width: 30rem;
+    width: 500px;
+}
+
+.bird-img {
+    width:500px;
 }
 
 button {

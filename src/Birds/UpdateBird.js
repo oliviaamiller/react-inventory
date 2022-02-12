@@ -68,7 +68,7 @@ export default function UpdateBird() {
       </form>
 
       <footer>
-        <img src={'./images/loony.png'} />
+        <img className='bird-img' src={'../images/owls.png'} />
       </footer>
       
     </div>

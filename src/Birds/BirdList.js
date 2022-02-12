@@ -22,7 +22,7 @@ export default function BirdList() {
       {birds.map((bird, i) =>
         <Bird key={`${bird}-${i}`} bird={bird} />)}
       <footer>
-        <img src={'./images/bird-man.png'} />
+        <img className='bird-img' src={'./images/bird-man.png'} />
       </footer>
     </div>
   );

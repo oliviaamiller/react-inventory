@@ -50,6 +50,6 @@ a:visited {
 }
 
 .active-class {
-  background-color: rgb(255, 227, 232);
+  text-decoration: line-through !important;
 }
 

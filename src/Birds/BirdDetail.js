@@ -25,17 +25,21 @@ export default function DetailPage() {
 
   return (
     <div className='bird-detail'>
-      <img src={bird.image}/>
-      <p>{bird.name}</p>
-      <p>{bird.species}</p>
-      <p>seen: {bird.date}</p>
-      <p>location: {bird.location}</p>
-      <p>notes: {bird.notes}</p>
-      <button onClick={handleDelete}>delete bird</button>
-      <button onClick={() => history.push(`/birds/${bird.id}/update`)} >update bird</button>
+      <img className='bird-detail-img' src={bird.image}/>
+      <p className='name'>{bird.name}</p>
+      <p className='species'>{bird.species}</p>
+      <div className='bird-data'>
+        <p>seen: {bird.date}</p>
+        <p>location: {bird.location}</p>
+        <p>notes: {bird.notes}</p>
+      </div>
+      <div className='detail-buttons'>
+        <button onClick={handleDelete}>delete bird</button>
+        <button onClick={() => history.push(`/birds/${bird.id}/update`)} >update bird</button>
+      </div>
 
       <footer>
-        <img src={'../images/owls.png'} />
+        <img className='bird-img' src={'../images/owls.png'} />
       </footer>
       
     </div>

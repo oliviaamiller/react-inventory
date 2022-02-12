@@ -46,7 +46,7 @@ export default function BirdForm({
       </form>
 
       <footer>
-        <img src={'../images/feeding.png'} />
+        <img className='bird-img' src={'../images/feeding.png'} />
       </footer>
 
     </div>
