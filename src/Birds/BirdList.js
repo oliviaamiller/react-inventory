@@ -15,8 +15,6 @@ export default function BirdList() {
     fetch();
   }, []);
 
-  console.log(birds);
-
   return (
     <div className='birds-list'>
       {birds.map((bird, i) =>
